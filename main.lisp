@@ -4,32 +4,23 @@
     ( let*
         ( 
             ( a 
-                (nth 0 myList)
-)
+                ( nth 0 myList ) )
             ( b 
-                (nth 1 myList)
-)
+                ( nth 1 myList ) )
             ( sum 
-                (+ a b)
-)
+                ( + a b ) )
             ( nextList 
-                ( cons sum myList ) 
-)
-)
-        ( 
-if
-            (= 
-                (length myList) myCount)  
+                ( cons sum myList ) ) )
+        ( if
+            ( = 
+                ( length myList ) myCount )  
             ( print 
-                (reverse myList) ) 
-            ( fibRecursive nextList myCount )
-)
-)
-)
+                ( reverse myList ) ) 
+            ( fibRecursive nextList myCount ) ) ) ) 
 
 ( defun fibonacci 
-    (myCount) 
+    ( myCount ) 
     ( fibRecursive 
-        (List 1 0) myCount ) )
+        ( List 1 0 ) myCount ) )
 
-(fibonacci 25)
+( fibonacci 25 )
