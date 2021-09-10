@@ -23,4 +23,6 @@
     ( fibRecursive 
         ( List 1 0 ) myCount ) )
 
-( fibonacci 25 )
+( write-line "How many numbers of the Fibonacci sequence?" )
+
+( fibonacci ( read ) )
